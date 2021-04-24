@@ -22,5 +22,9 @@
   },
   "dependencies": {
     "dayjs": "^1.10.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meixiang474/icya-utils.git"
   }
 }
