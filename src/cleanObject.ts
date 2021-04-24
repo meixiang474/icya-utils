@@ -1,4 +1,4 @@
-import { isVoid } from ".";
+import { isVoid } from "./isVoid";
 
 export const cleanObject = (object: Record<string, any> = {}) => {
   const result = { ...object };

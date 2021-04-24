@@ -3,8 +3,12 @@
   "version": "2.0.4",
   "description": "",
   "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build-cjs": "microbundle build --tsconfig tsconfig.json --compress=false --format cjs",
+    "build-all": "microbundle build --tsconfig tsconfig.json  --compress=false",
+    "build": "npm run build-all & npm run build-cjs"
   },
   "files": [
     "dist"
@@ -14,6 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^17.0.3",
+    "microbundle": "^0.13.0",
     "react": "^17.0.2"
   },
   "sideEffects": false,

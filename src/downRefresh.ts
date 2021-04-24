@@ -1,4 +1,4 @@
-import { throttle } from ".";
+import { throttle } from "./throttle";
 
 export const downRefresh = (
   element: HTMLElement,

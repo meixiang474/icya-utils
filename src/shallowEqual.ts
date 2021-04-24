@@ -1,4 +1,4 @@
-import { isObject } from ".";
+import { isObject } from "./isObject";
 
 export const shallowEqual = (a: any, b: any) => {
   if (!isObject(a) || !isObject(b)) {
